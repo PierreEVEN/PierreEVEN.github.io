@@ -1,0 +1,6 @@
+.idea
+node_modules
+/build
+service-worker.js
+/static
+tailwind.config.js
