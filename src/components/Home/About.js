@@ -7,10 +7,10 @@ export default function About() {
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                        This website is in construction
+                        Welcome to my portfolio
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        (I'm not a web developer btw)
+                        Hi ! I'm Pierre EVEN, a young engine programmer student.
                     </p>
                     <div className="flex justify-center">
                         <a
@@ -22,9 +22,9 @@ export default function About() {
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <img
-                        className="object-cover object-center rounded"
+                        className="object-cover object-center rounded rounded-full w-1/2"
                         alt="todo"
-                        src="https://t4.ftcdn.net/jpg/03/45/93/87/360_F_345938727_EpY5vTSaNl9nJWs7QDzWP9IlGIPljoIn.jpg"
+                        src="prof.jpg"
                     />
                 </div>
             </div>

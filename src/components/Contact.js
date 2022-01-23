@@ -18,6 +18,47 @@ export default function Contact() {
                             </a>
                         </div>
                     </div>
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                        <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                                DISCORD
+                            </h2>
+                            <a className="text-indigo-400 leading-relaxed">
+                                pierre#4897
+                            </a>
+                        </div>
+                    </div>
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                        <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                                TWITTER
+                            </h2>
+                            <a className="text-indigo-400 leading-relaxed">
+                                @ePierre_dev
+                            </a>
+                        </div>
+                    </div>
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                        <div className=" px-6 mt-4 lg:mt-0">
+                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                                GITHUB
+                            </h2>
+                            <a className="text-indigo-400 leading-relaxed" href="https://github.com/PierreEVEN">
+                                https://github.com/PierreEVEN
+                            </a>
+                        </div>
+                    </div>
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                        <div className=" px-6 mt-4 lg:mt-0">
+                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                                YOUTUBE
+                            </h2>
+                            <a className="text-indigo-400 leading-relaxed" href="
+                                https://www.youtube.com/channel/UCpKW2uF9wbCsqMeTuHugijw">
+                                pierre EVEN
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

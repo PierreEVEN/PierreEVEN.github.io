@@ -7,8 +7,8 @@ export default function Navbar() {
     return (
         <header className="bg-gray-800 md:sticky top-0 z-10">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a className="title-font font-medium text-white mb-4 md:mb-0">
-                    <Link to="/" className="mr-5 hover:text-white">
+                <a className="title-font font-black text-white mb-7 md:mb-0">
+                    <Link to="/" className="mr-10 hover:text-white">
                         <button variant="outlined">
                             Pierre EVEN
                         </button>

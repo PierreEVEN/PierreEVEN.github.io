@@ -1,22 +1,26 @@
-export const projects = [{
-    title: "3D Game engine",
-    subtitle: "personal 3D game engine i'm working on",
-    description: "",
-    image: "https://user-images.githubusercontent.com/24438631/136795565-0bfdb609-ef96-44de-9579-f8c0b2a79f83.png",
-    link: "GameEngines",
-}, {
-    title: "Games",
-    subtitle: "Game I made in solo, or with peoples",
-    description: "",
-    image: "https://camo.githubusercontent.com/878a2bc96873e78d2d3c99e7e170c2365ac27d19f413364c107060ab1972cbd9/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6d6f35616e793466477a302f302e6a7067",
-    link: "Games",
-}, {
-    title: "Miscellaneous",
-    subtitle: "Not finished yet",
-    description: "",
-    image: "https://github.com/evenp/ILSD/raw/main/Images/ccx02.png?raw=true",
-    link: "Other",
-},];
+export const projects = [
+    {
+        title: "3D Game engine",
+        subtitle: "personal 3D game engines I'm working on",
+        description: "",
+        image: "https://user-images.githubusercontent.com/24438631/136795565-0bfdb609-ef96-44de-9579-f8c0b2a79f83.png",
+        link: "GameEngines",
+    },
+    {
+        title: "Games",
+        subtitle: "Game I made in solo, or with peoples",
+        description: "",
+        image: "https://user-images.githubusercontent.com/24438631/150693061-23689e9d-7b62-4396-b706-0d510ff6ebde.png",
+        link: "Games",
+    },
+    {
+        title: "Misc",
+        subtitle: "Stuff I've done that are not games or engines",
+        description: "",
+        image: "https://cdn.discordapp.com/attachments/837400074341318656/934886528948244600/unknown.png",
+        link: "Other",
+    },
+];
 
 export const languages = {
     HLSL: {
@@ -300,8 +304,9 @@ export const games = [
         title: "Scuffly",
         languages: [languages.Csharp, languages.HLSL],
         graphics: apis.Unity,
+        libs: [libs.blender, libs.wwise, libs.substancepainter],
         description: "Scuffly is a flight simulator made in solo for my 3rd year 3D game engine course at the University of Strasbourg. This project is a continuation of my previous project : Three Flight Simulator",
-        image: "https://youtu.be/mo5any4fGz0",
+        image: "https://user-images.githubusercontent.com/24438631/150693061-23689e9d-7b62-4396-b706-0d510ff6ebde.png",
         link: "https://github.com/PierreEVEN/Scuffly",
         start: "October 2021",
         duration: "2 months",
@@ -337,12 +342,10 @@ export const games = [
             {
                 name: "Editor tools",
                 description: "In editor development tools that simplify and speeds up artistic tasks. The procedural landscape is compatible with editor viewport and support hot reloads",
-                image: "https://camo.githubusercontent.com/1983799b926dbbe237a3d33b53205d7b20b0441058e7d8907d52b52192483a6f/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6e584d304a585577466c4d2f302e6a7067"
             },
             {
-              name: "Custom UI tools",
-              description:  "Easy to use tools that generate dial, scales and much more",
-              image: "https://camo.githubusercontent.com/357819c5b8a520c2d35af66dbf17b8768f1ce48539fa6f4e12be286b77850777/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f30315a59644c6849624d512f302e6a7067",
+                name: "Custom UI tools",
+                description: "Easy to use tools that generate dial, scales and much more",
             },
             {
                 name: "Advanced rendering",
@@ -355,6 +358,45 @@ export const games = [
             },
             {
                 youtube: "https://www.youtube.com/embed/tEoloqOIR44",
+            },
+            {
+                youtube: "https://www.youtube.com/embed/nXM0JXUwFlM",
+            },
+            {
+                youtube: "https://www.youtube.com/embed/01ZYdLhIbMQ",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693050-c1c1ff50-b57b-4e82-bd06-0f5b6e30c1e7.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693068-20426e66-281c-4f4a-8f16-20d262c5453c.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693077-8f9bfd4d-3a4f-42d7-b599-c2b05de07a19.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693094-37805712-6958-484c-84c8-41e5d7ed7c98.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693106-8bfea4fe-9458-4c35-ab8a-4935b0b7c076.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693116-5f427c0e-ef92-4dc9-bdb3-dbff98bf81b9.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693120-ada35852-793a-400d-ba56-a7f5a2814689.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693126-1291b311-d0dc-488c-b8bf-8783b6b27335.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693127-f57f54d9-4a47-45d4-b245-1788836f4e1c.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693144-289e2c3a-cd9c-4d2e-bf8c-f3f35ab840ff.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693149-854be278-8db4-42c4-a7c3-c51d4edfd325.png",
             },
         ],
     },
@@ -442,6 +484,12 @@ export const games = [
             {
                 image: "https://user-images.githubusercontent.com/24438631/110436644-c5724100-80b4-11eb-9b51-f0067786d554.png",
             },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693735-efe73c3d-397a-4479-b0ab-e43f0df9069f.png",
+            },
+            {
+                image: "https://user-images.githubusercontent.com/24438631/150693744-59b0760e-b12d-46cb-a446-142ed685eafe.png",
+            }
         ],
     },
 
@@ -479,7 +527,7 @@ export const games = [
     },
 
     {
-        title: "Le postier de Fakarava - Chad version",
+        title: "Le postier de Fakarava - 'Chad version'",
         languages: [languages.Blueprint],
         graphics: apis.UE4,
         libs: [libs.blender, libs.magicavoxel],
@@ -531,4 +579,112 @@ export const games = [
         ],
     },
 
+
+    {
+        title: "Qanga",
+        languages: [languages.Blueprint, languages.Cpp],
+        graphics: apis.UE4,
+        libs: [libs.blender],
+        description: "A massive multiplayer open world by iolaCorp. I worked on gameplay features there between 2017 and 2019",
+        image: "https://qanga.iolacorp.com/imagyseycache/original.1920x1080/pages/35/mpc-hc64_ei7dJY3Nq2_60255bceda662.jpg?s=afad2a31a8639ef9da26e406ddd968ca",
+        link: "https://qanga.iolacorp.com",
+        start: "early 2017",
+        duration: "Still in active development, I leaved the project in 2019",
+        features: [
+            {
+                name: "Massively multiplayer",
+                description: "Up to 50 simultaneous players in a large open world"
+            },
+            {
+                name: "Multiple gamemodes",
+                description: "Sandbox open world & battle royal modes"
+            },
+            {
+                name: "Competitive gameplay",
+                description: "Dynamic, challenging, and competitive gameplay. Advanced lag compensation, high performance network and much more."
+            },
+            {
+                name: "Vehicles",
+                description: "Hovering vehicles using a custom physics model"
+            },
+            {
+                name: "Sandbox",
+                description: "Build your home, fight AI, waves, boss, defend your base"
+            },
+        ],
+    },
+
 ];
+
+
+export const other = [
+
+    {
+        title: "Prefab tool",
+        languages: [languages.Cpp],
+        graphics: apis.UE4,
+        description: "Editor tool for the Unreal Engine 4 that add a prefab system optimized for open worlds (made for Qanga). A prefabs is a container of children objects that can be 3D models, lights, other prefabs, or anything else.",
+        image: "https://cdn.discordapp.com/attachments/837400074341318656/934886528948244600/unknown.png",
+        link: "",
+        start: "early 2020",
+        duration: "4 months",
+        libs: [libs.glfw, libs.stbi, libs.imgui],
+        features: [
+            {
+                name: "Randomization",
+                description: "Use multiple preset to randomize generation"
+            },
+            {
+                name: "Performances",
+                description: "Culling and async loading to allow a smooth usage in open worlds"
+            },
+            {
+                name: "Custom editor",
+                description: "Edit prefabs in a custom dedicated editor window"
+            },
+        ],
+        gallery: [
+            {
+                youtube: "https://www.youtube.com/embed/H0Um93o3ANU",
+            },
+            {
+                youtube: "https://www.youtube.com/embed/1-_JRkDrqDI",
+            },
+            {
+                image: "https://cdn.discordapp.com/attachments/837400074341318656/934886760402518056/unknown.png",
+            },
+        ],
+    },
+    {
+        title: "Super packer",
+        languages: [languages.Cpp, languages.GLSL],
+        graphics: apis.OpenGL,
+        description: "Someone needed a tool that allow recombining image channel in few clicks, so I made it",
+        image: "https://user-images.githubusercontent.com/24438631/113629508-ca4ff380-9666-11eb-9d17-6a4a56f97d09.png",
+        link: "https://github.com/PierreEVEN/SuperPacker",
+        start: "2020",
+        duration: "one evening",
+        libs: [libs.glfw, libs.stbi, libs.imgui],
+        gallery: [
+            {
+                image: "https://github.com/PierreEVEN/SuperPacker/raw/main/icon.png",
+            },
+        ],
+    },
+    {
+        title: "ILSD",
+        languages: [languages.Cpp, languages.GLSL],
+        graphics: apis.OpenGL,
+        description: "A linear structure extraction research project where I worked on the implementation of the user interface. Initially under QT (whose licence was no longer compatible with the project), I created an UI library on the top of ImGui that reproduce the behaviour of QT's widgets to permit a quick implementation",
+        image: "https://github.com/evenp/ILSD/raw/main/Images/ccx02.png?raw=true",
+        link: "https://github.com/evenp/ILSD",
+        start: "Jun 2020",
+        duration: "2 months",
+        libs: [libs.glfw, libs.stbi, libs.imgui],
+        gallery: [
+            {
+                image: "https://github.com/evenp/ILSD/raw/main/Images/ccx02.png?raw=true    ",
+            },
+        ],
+    },
+]

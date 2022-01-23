@@ -1,7 +1,7 @@
 // src/components/Projects.js
 
 import React from "react";
-import {game_engines, games} from "../../data";
+import {game_engines, games, other} from "../../data";
 
 function GameEngines() {
     return Project(game_engines, "3D Game engines", "\n" +
@@ -17,7 +17,7 @@ function Games() {
 }
 
 function Other() {
-    return Project([], "Other", "stuff I made that are not games or game engines");
+    return Project(other, "Other", "stuff I made that are not games or game engines");
 }
 
 export {GameEngines, Games, Other};
@@ -38,13 +38,13 @@ function Project(content, title, description) {
                     {content.map((project) => (
                         <div className="flex flex-col w-full mb-20">
                             <hr/>
-                            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white text-center">
+                            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white text-center m-4">
                                 <a href={project.link}
                                    className=" focus:outline-none hover:bg-gray-700 hover:text-white">
                                     {project.title}
                                 </a>
                             </h1>
-                            <h2 className="sm:text-2xl text-2xl font-medium title-font mb-4 text-white">
+                            <h2 className="sm:text-2xl text-2xl font-medium title-font mb-4 text-white m-4">
                                 Presentation
                             </h2>
                             <div className="  flex flex-wrap">
@@ -61,41 +61,64 @@ function Project(content, title, description) {
                                             </a>
                                         </p>
                                     </div>
-                                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-                                        <div className=" px-6 mt-4  ">
-                                            <p className="mt-1">
-                                                {project.languages instanceof Object ? "langages : " + project.languages.map((language) => (
-                                                    " " + language.name
-                                                )) : ""}
-                                            </p>
-                                            <p className="mt-1">
-                                                {project.libs instanceof Object ? "libraries : " + project.libs.map((lib) => (
-                                                    " " + lib.name
-                                                )) : ""}
-                                            </p>
-                                            <p className="mt-1">
-                                                {project.graphics instanceof Object ? "Graphic API: " + project.graphics.name : ""}
-                                            </p>
-                                            <p className="mt-1">
-                                                {project.start ? "start : " + project.start : ""}
-                                            </p>
-                                            <p className="mt-1">
-                                                {project.duration ? "duration : " + project.duration : ""}
-                                            </p>
+                                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md divide-x ">
+                                        <div className=" px-6 mt-4 w-full ">
+                                            <table className="table-auto w-full">
+                                                <tbody className="text-left whitespace-nowrap">
+                                                {project.languages instanceof Object ?
+                                                    (
+                                                        <tr>
+                                                            <td><li>langages</li></td>
+                                                            <td>{project.languages.map((language) => (language.name + ", "))} </td>
+                                                        </tr>
+                                                    ) : ""}
+                                                {project.libs instanceof Object ?
+                                                    (
+                                                        <tr>
+                                                            <td><li>libraries</li></td>
+                                                            <td>{project.libs.map((lib) => (lib.name + ", "))}</td>
+                                                        </tr>
+                                                    ) : ""}
+                                                {project.graphics instanceof Object ?
+                                                    (
+                                                        <tr>
+                                                            <td><li>graphics</li></td>
+                                                            <td>{project.graphics.name}</td>
+                                                        </tr>
+                                                    ) : ""}
+
+                                                {project.start ?
+                                                    (
+                                                        <tr>
+                                                            <td><li>start</li></td>
+                                                            <td>{project.start}</td>
+                                                        </tr>
+                                                    ) : ""}
+
+                                                {project.duration ?
+                                                    (
+                                                        <tr>
+                                                            <td><li>duration</li></td>
+                                                            <td>{project.duration}</td>
+                                                        </tr>
+                                                    ) : ""}
+
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="lg:w-1/2">
+                                <div className="lg:w-1/2 border-solid border-2 border-gray-500 shadow-xl">
                                     <img
                                         alt="gallery"
-                                        className=" inset-0 object-cover object-center"
+                                        className="object-center"
                                         src={project.image}
                                     />
                                 </div>
                             </div>
 
                             {project.features ?
-                                <h2 className="sm:text-2xl text-2xl font-medium title-font mb-4 text-white">
+                                <h2 className="sm:text-2xl text-2xl font-medium title-font mb-4 text-white m-4">
                                     Key features
                                 </h2> : ""}
                             <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
@@ -123,7 +146,7 @@ function Project(content, title, description) {
                             <h2 className="sm:text-2xl text-2xl font-medium title-font mb-4 text-white">
                                 Gallery
                             </h2>
-                                <div className="container grid grid-cols-4 gap-2 mx-auto">
+                            <div className="container grid grid-cols-4 gap-2 mx-auto">
                                 {project.gallery ? project.gallery.map((element) => (
                                     <div className="class=w-full rounded">
                                         {element.youtube ? <iframe src={element.youtube}
@@ -132,8 +155,9 @@ function Project(content, title, description) {
                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                                    allowFullScreen></iframe> : ""}
                                         {element.image ?
+                                            <a href={element.image}  target="_blank">
                                             <img className="inset-0 w-full h-full object-cover object-center"
-                                                 src={element.image} alt="image"/> : ""}
+                                                 src={element.image} alt="image"/> </a>: ""}
                                     </div>
 
                                 )) : ""}
