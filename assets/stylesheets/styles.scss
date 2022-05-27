@@ -3,8 +3,39 @@ $navbar-background : red;
 
 body {
   background-color: $midnight-blue;
+  margin: 0;
 }
 
 .navbar-container {
+  display: flex;
   background-color: $navbar-background;
+
+  button {
+    background-color: transparent; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    p {
+      padding: 10px;
+      background-color: transparent; /* Green */
+      color: white;
+    }
+  }
+
+
+  button:hover {
+    p {
+      background-color: blue;
+    }
+  }
+  button:active {
+    p {
+      background-color: black;
+    }
+  }
 }
