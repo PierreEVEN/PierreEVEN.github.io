@@ -4,3 +4,4 @@ node_modules
 service-worker.js
 /static
 tailwind.config.js
+yarn.lock
